@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <title>Unified Theory</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="alt.ico" />
+  <script>
+
+    initBlorbos = (blorbos) => {
+        const sources = {
+          solemn: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thesolemn.png',
+          twin2: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins2.png',
+          _: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/_.png',
+          twin1: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins1.png',
+          reflection: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thereflection.png',
+          match: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thematch.png',
+          shot: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theshot.png',
+          end: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theend.png',
+          k: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/k.png', //doesn't deserve a title, bastard man
+        }
+        const ele = document.querySelector("#cast");
+        if(!ele){
+          console.error("JR NOTE: cannot find cast section. Did you REALLY mean to call this?");
+          return;
+        }
+
+        for(let blorbo of blorbos){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = sources[blorbo];
+          ele.append(img);
+        }
+        //stress test
+        /*
+        for(let source of Object.values(sources)){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = source;
+          ele.append(img);
+        }*/
+    }
+
+    window.onload = () => {
+      initBlorbos(["end","match"])
+    }
+
+    window.onclick = () => {
+      document.querySelector("#muzak").play();
+      document.querySelector("#story").style.display = "block";
+      document.querySelector("#euphoria").style.display = "none";
+
+    }
+  </script>
+</head>
+
+
+<body>
+
+  <audio id="muzak">
+    <source src="http://farragofiction.com/CodexOfRuin/MallMusicMuzakMallOf1974/Finish%20(1).mp3" type="audio/mpeg">
+    If you're reading this, audio isn't supported.
+  </audio>
+  <img src="dreamstime_s_2585883.jpg" id="fake-background"></div>
+
+  <div id="container">
+    <button id="euphoria">Click To Experience Meloncholy</button>
+
+    <div id="story">
+      <p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Dear Ria,</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This is not a report. There are no orders in this letter. Please take your time to sit down and make yourself comfortable.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">I owe you an apology.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">We ended things quietly, back then. We had no option but to. I could not afford to lose focus, lest I ceased to exist where you could have seen it. I would have hated to have you see me in a body bag, like so many of our acquaintances.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">It has been a long time since then, at least for me. I have repeated these fifty years a dozen times by now, even if I rarely make it out in one piece. It has been something I have tried to hide from you all. I worried that if you knew, you may have seen me as a monster. I have seen you all die many, many times. I have killed you all myself many times as well; more than anyone should ever have to endure.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">And yet, even after all this time, I have never stopped loving you, Ria. Not for a moment.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Perhaps not as ardently as I once did. I hate to admit it, but I have changed. The nature of our relationship has changed, as well; the balance between an Agent and a Captain hardly tends to make equals. I know that there were times where I had been stern or aloof towards you, but I did it because I didn&rsquo;t know what else to do, in my condition. I gave you the task I did because I knew you had always been the best at finding these connections, and your good judgment has many times been there to keep me focused. I thought the direction, a task to accomplish, would have helped you. Even when my voice was taken away, I had wanted nothing but to make you happy.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">It did not work as I had hoped. Something hurt you enough to take everything else with you. I have seen you die a hundred times. Not once have you left a body-- yours, or anyone else's.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">I cannot blame you. This world is bleak, indeed; a universe full of things that were meant to be, but never could. But there is much good in this world as well. There is sunshine and there is fresh grass. There are birds and animals and there is good food, and there are good friends. Perhaps this is the worst timeline, but I have found it quite forgiving.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">I hoped I could have made you see that, as well.</span></p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">But that was my mistake. It was foolish to have made your happiness my lone burden-- back then, and now. I alone could not protect you, and I never could have, for I stopped being able to give you what your heart longed for. Our relationship limped for so long because I was too proud to admit I could no longer love you in the way you wanted, and I am sorry for that.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">That does not mean I do not remember it fondly.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Remember when it was just us, alone in those dead man shifts? I remember how you spoke to me about everything and nothing at all, each one of your words filled with such passion, such fervor. I never could stop myself from hanging onto every single one of them. It was like magic. You took all these ideas, all these concerns you had, all these observations about the world, and connected them in such a way that it just made sense, and when the magic of the craft became mundane, I became transfixed with the craftsman that woke up every day to make it so.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">So, this is it. This letter is the closure I owed you, but never gave you.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">If there is one thing you take out of it all, let it be this: our love was not failed love, and not any less real because it ended; there was a time in which our lives made sense together, and we took the chance to live in a world where to love was to risk immeasurable pain. And we did so: we loved each other, very, very much, and it was brave, and it was beautiful. I do not regret it, and I never will, for I am not ashamed to ever have loved someone as thoughtful, as passionate, and as unique as you.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">It is a past we can never return to. It is gone, along with everything else. But it does not mean that it never happened. And if it hurts to remember me as your lover, I hope you will remember me as your friend.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">When I finish writing this letter, my armor will punish me with a thousand deaths, and you will never see me again. I am not unfamiliar with death. I know you will cry when you read this, and it will hurt, and I apologize for that, but I had to do right by you one last time.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">You may try to chase me in the veil beyond death, but I warn you that you will not find me. There is nothing after this universe worth seeing. You are meant to be here, with the team. They care about you as well, and they wish for you to be happy. I care about them immensely as well. Treat them well, and they will pay you back tenfold.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Everything must reach an ending one day. I am fine with this being mine. I will sooner die in honor, strong enough to take the chance so that you may truly live, than to live in fear of admitting that I ever cared.</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">See you in the next life, best friend,</span></p>
+<p>&nbsp;</p>
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: 'Courier New'; color: #ffffff; background-color: #000000; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Camille</span></p>
+<p><br /><br /></p>
+    </div>
+
+  </div>
+
+  <div id="cast"></div>
+</body>
+
+</html>
